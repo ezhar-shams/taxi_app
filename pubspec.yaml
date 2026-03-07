@@ -1,0 +1,64 @@
+name: sair34_app
+description: Intercity Taxi Booking App for Afghanistan
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: '>=3.19.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+
+  # Navigation
+  go_router: ^13.2.0
+
+  # Networking
+  dio: ^5.4.1
+
+  # Local Storage
+  shared_preferences: ^2.2.2
+  hive_flutter: ^1.1.0
+  hive: ^2.2.3
+
+  # UI
+  flutter_svg: ^2.0.10+1
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+  lottie: ^3.1.0
+  qr_flutter: ^4.1.0
+  dotted_border: ^2.1.0
+
+  # Utilities
+  intl: ^0.20.2
+  uuid: ^4.3.3
+  share_plus: ^9.0.0
+  permission_handler: ^11.3.0
+  image_picker: ^1.0.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  riverpod_generator: ^2.4.0
+  build_runner: ^2.4.8
+  hive_generator: ^2.0.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/lottie/
+
+  # fonts will be added once TTF files are available
+  # fonts:
+  #   - family: Vazirmatn
