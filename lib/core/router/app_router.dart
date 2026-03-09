@@ -17,6 +17,7 @@ import '../../presentation/screens/ticket/digital_ticket_screen.dart';
 import '../../presentation/screens/my_trips/my_trips_screen.dart';
 import '../../presentation/screens/profile/profile_screen.dart';
 import '../../presentation/screens/main/main_shell.dart';
+import '../../presentation/screens/city_ride/city_ride_results_screen.dart';
 
 // Route names
 class AppRoutes {
@@ -36,11 +37,16 @@ class AppRoutes {
   static const String ticket          = '/ticket/:bookingId';
   static const String myTrips         = '/my-trips';
   static const String profileRoute    = '/profile';
+  static const String cityRideResults = '/city-ride';
 
   static String tripPath(String id)        => '/trip/$id';
   static String seatPath(String id)        => '/trip/$id/seat';
   static String bookingPath(String id)     => '/trip/$id/book';
   static String ticketPath(String bookId)  => '/ticket/$bookId';
+  static String cityRidePath({
+    required String pickupId,
+    required String destId,
+  }) => '/city-ride?pickup=$pickupId&dest=$destId';
 }
 
 final routerProvider = Provider<GoRouter>((ref) {
@@ -135,6 +141,16 @@ final routerProvider = Provider<GoRouter>((ref) {
         builder: (context, state) {
           final bookingId = state.pathParameters['bookingId'] ?? '';
           return DigitalTicketScreen(bookingId: bookingId);
+        },
+      ),
+      GoRoute(
+        path: AppRoutes.cityRideResults,
+        builder: (context, state) {
+          final params = state.uri.queryParameters;
+          return CityRideResultsScreen(
+            pickupId: params['pickup'] ?? '',
+            destId:   params['dest']   ?? '',
+          );
         },
       ),
     ],

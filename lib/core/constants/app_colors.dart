@@ -49,6 +49,32 @@ class AppColors {
   static const Color seatDriver     = Color(0xFFFEF5EC);
   static const Color seatDriverBdr  = Color(0xFFE67E22);
 
+  // ── Ride (city-taxi) — uses the Sair34 crimson brand palette ─────────────
+  static const Color rideBlue        = Color(0xFFC0392B);   // = primary
+  static const Color rideBlueDark    = Color(0xFF922B21);   // = primaryDark
+  static const Color rideBlueLight   = Color(0xFFE74C3C);   // = primaryLight
+  static const Color rideBlueSurface = Color(0xFFFDF2F1);   // = primarySurface
+  static const Color rideBlueBorder  = Color(0xFFF5B7B1);   // = primaryBorder
+
+  static const LinearGradient rideGradient = LinearGradient(
+    begin: Alignment.centerRight,
+    end: Alignment.centerLeft,
+    colors: [Color(0xFFE74C3C), Color(0xFF922B21)],
+  );
+  static const LinearGradient rideHeaderGradient = LinearGradient(
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    colors: [Color(0xFFAD1F1F), Color(0xFFC0392B)],
+  );
+
+  static List<BoxShadow> get rideShadow => [
+    BoxShadow(
+      color: const Color(0xFFC0392B).withValues(alpha: 0.35),
+      blurRadius: 16,
+      offset: const Offset(0, 6),
+    ),
+  ];
+
   // Gradients
   static const LinearGradient primaryGradient = LinearGradient(
     begin: Alignment.topLeft, end: Alignment.bottomRight,

@@ -107,31 +107,53 @@ class ProfileScreen extends ConsumerWidget {
   void _showLanguageSheet(BuildContext context, WidgetRef ref, String lang) {
     showModalBottomSheet(
       context: context,
+      backgroundColor: Colors.transparent,
       builder: (_) => Directionality(
         textDirection: TextDirection.rtl,
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            ListTile(
-              leading: const Text('🇦🇫', style: TextStyle(fontSize: 24)),
-              title: const Text('دری'),
-              trailing: lang == 'fa' ? const Icon(Icons.check, color: AppColors.primary) : null,
-              onTap: () {
-                ref.read(languageProvider.notifier).setLanguage('fa');
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              leading: const Text('🇦🇫', style: TextStyle(fontSize: 24)),
-              title: const Text('پښتو'),
-              trailing: lang == 'ps' ? const Icon(Icons.check, color: AppColors.primary) : null,
-              onTap: () {
-                ref.read(languageProvider.notifier).setLanguage('ps');
-                Navigator.pop(context);
-              },
-            ),
-            const SizedBox(height: 16),
-          ],
+        child: Container(
+          decoration: const BoxDecoration(
+            color: AppColors.white,
+            borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              // Handle bar
+              Container(
+                width: 36,
+                height: 4,
+                margin: const EdgeInsets.only(top: 12, bottom: 8),
+                decoration: BoxDecoration(
+                  color: AppColors.divider,
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+              ListTile(
+                contentPadding: const EdgeInsets.symmetric(horizontal: 24, vertical: 4),
+                title: Text('دری', style: AppTextStyles.bodyLarge),
+                trailing: lang == 'fa'
+                    ? const Icon(Icons.check_rounded, color: AppColors.primary, size: 22)
+                    : null,
+                onTap: () {
+                  ref.read(languageProvider.notifier).setLanguage('fa');
+                  Navigator.pop(context);
+                },
+              ),
+              const Divider(height: 1, indent: 24, endIndent: 24),
+              ListTile(
+                contentPadding: const EdgeInsets.symmetric(horizontal: 24, vertical: 4),
+                title: Text('پښتو', style: AppTextStyles.bodyLarge),
+                trailing: lang == 'ps'
+                    ? const Icon(Icons.check_rounded, color: AppColors.primary, size: 22)
+                    : null,
+                onTap: () {
+                  ref.read(languageProvider.notifier).setLanguage('ps');
+                  Navigator.pop(context);
+                },
+              ),
+              const SizedBox(height: 24),
+            ],
+          ),
         ),
       ),
     );

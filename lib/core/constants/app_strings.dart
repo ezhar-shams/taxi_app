@@ -621,6 +621,254 @@ class AppStrings {
     'ps': 'اړه',
   };
 
+  // ─── City Ride / Uber-style Strings ───────────────────────────────────────
+  static const Map<String, String> intercityMode = {
+    'fa': 'تاکسی بین‌شهری',
+    'ps': 'د ښارونو تر منځ ټکسي',
+  };
+  static const Map<String, String> cityRideMode = {
+    'fa': 'سواری شهری',
+    'ps': 'د ښار سواري',
+  };
+  static const Map<String, String> pickupLocation = {
+    'fa': 'موقعیت سوارشدن',
+    'ps': 'د سپرلو ځای',
+  };
+  static const Map<String, String> dropoffLocation = {
+    'fa': 'مقصد',
+    'ps': 'منزل',
+  };
+  static const Map<String, String> wherePickup = {
+    'fa': 'از کجا سوار شوید؟',
+    'ps': 'چیرې سپریږئ؟',
+  };
+  static const Map<String, String> whereGoing = {
+    'fa': 'به کجا می‌روید؟',
+    'ps': 'چیرته ځئ؟',
+  };
+  static const Map<String, String> searchLocation = {
+    'fa': 'جستجوی موقعیت...',
+    'ps': 'د ځای لټون...',
+  };
+  static const Map<String, String> confirmLocation = {
+    'fa': 'تأیید این موقعیت',
+    'ps': 'دا ځای تایید کړئ',
+  };
+  static const Map<String, String> selectOnMap = {
+    'fa': 'روی نقشه انتخاب کنید',
+    'ps': 'پر نقشه غوره کړئ',
+  };
+  static const Map<String, String> moveMapToSelect = {
+    'fa': 'نقشه را حرکت دهید تا موقعیت انتخاب شود',
+    'ps': 'نقشه خوځولئ چې ځای غوره شي',
+  };
+  static const Map<String, String> searchRides = {
+    'fa': 'جستجوی سواری',
+    'ps': 'د سواري لټون',
+  };
+  static const Map<String, String> availableRides = {
+    'fa': 'سواری‌های موجود',
+    'ps': 'موجود سواريانه',
+  };
+  static const Map<String, String> estimatedPrice = {
+    'fa': 'قیمت تقریبی',
+    'ps': 'اټکلي قیمت',
+  };
+  static const Map<String, String> estimatedTime = {
+    'fa': 'زمان تقریبی',
+    'ps': 'اټکلي وخت',
+  };
+  static const Map<String, String> requestRide = {
+    'fa': 'درخواست سواری',
+    'ps': 'د سواري غوښتنه',
+  };
+  static const Map<String, String> rideConfirmed = {
+    'fa': 'سواری تأیید شد',
+    'ps': 'سواري تایید شوه',
+  };
+  static const Map<String, String> driverOnTheWay = {
+    'fa': 'راننده در راه است',
+    'ps': 'موټروان پر لار دی',
+  };
+  static const Map<String, String> economyRide = {
+    'fa': 'اقتصادی',
+    'ps': 'اقتصادي',
+  };
+  static const Map<String, String> comfortRide = {
+    'fa': 'راحتی',
+    'ps': 'آرامه',
+  };
+  static const Map<String, String> suvRide = {
+    'fa': 'جیپ',
+    'ps': 'جیپ',
+  };
+  static const Map<String, String> waitTime = {
+    'fa': 'زمان انتظار',
+    'ps': 'د انتظار وخت',
+  };
+  static const Map<String, String> distanceKm = {
+    'fa': 'فاصله',
+    'ps': 'واټن',
+  };
+  static const Map<String, String> chooseRideType = {
+    'fa': 'نوع سواری را انتخاب کنید',
+    'ps': 'د سواري ډول غوره کړئ',
+  };
+  static const Map<String, String> rideRoute = {
+    'fa': 'مسیر سفر',
+    'ps': 'د سفر لار',
+  };
+  static const Map<String, String> cancelRide = {
+    'fa': 'لغو سواری',
+    'ps': 'سواري لغوه کړئ',
+  };
+  static const Map<String, String> trackRide = {
+    'fa': 'پیگیری سواری',
+    'ps': 'سواري تعقیبول',
+  };
+  static const Map<String, String> rideId = {
+    'fa': 'شناسه سواری',
+    'ps': 'د سواري ID',
+  };
+  static const Map<String, String> capacity = {
+    'fa': 'ظرفیت',
+    'ps': 'ظرفیت',
+  };
+  static const Map<String, String> persons = {
+    'fa': 'نفر',
+    'ps': 'کس',
+  };
+  static const Map<String, String> selectPickupFirst = {
+    'fa': 'لطفاً موقعیت سوارشدن را انتخاب کنید',
+    'ps': 'مهرباني وکړه لومړی د سپرلو ځای غوره کړئ',
+  };
+  static const Map<String, String> selectDestFirst = {
+    'fa': 'لطفاً مقصد را انتخاب کنید',
+    'ps': 'مهرباني وکړه منزل غوره کړئ',
+  };
+  static const Map<String, String> sameLocationError = {
+    'fa': 'موقعیت سوارشدن و مقصد نمی‌توانند یکی باشند',
+    'ps': 'د سپرلو ځای او منزل باید توپیر ولري',
+  };
+  static const Map<String, String> payOnArrival = {
+    'fa': 'پرداخت پس از رسیدن',
+    'ps': 'د رسیدو وروسته تادیه',
+  };
+  static const Map<String, String> popularLocations = {
+    'fa': 'مکان‌های محبوب',
+    'ps': 'مشهور ځایونه',
+  };
+  static const Map<String, String> nearbyLocations = {
+    'fa': 'مکان‌های نزدیک',
+    'ps': 'نږدې ځایونه',
+  };
+  static const Map<String, String> minute = {
+    'fa': 'دقیقه',
+    'ps': 'دقیقه',
+  };
+  static const Map<String, String> km = {
+    'fa': 'کیلومتر',
+    'ps': 'کیلومتر',
+  };
+  static const Map<String, String> driverDetails = {
+    'fa': 'مشخصات راننده',
+    'ps': 'د موټروان تفصیل',
+  };
+  static const Map<String, String> trips = {
+    'fa': 'سفر',
+    'ps': 'سفر',
+  };
+  static const Map<String, String> yourRoute = {
+    'fa': 'مسیر شما',
+    'ps': 'ستاسو لار',
+  };
+
+  // ─── Driver Search & Active Ride ──────────────────────────────────────────
+  static const Map<String, String> searchingDriver = {
+    'fa': 'در جستجوی راننده...',
+    'ps': 'د موټروان لټون...',
+  };
+  static const Map<String, String> driverFound = {
+    'fa': 'راننده پیدا شد!',
+    'ps': 'موټروان وموندل شو!',
+  };
+  static const Map<String, String> driverArriving = {
+    'fa': 'راننده در راه است',
+    'ps': 'موټروان پر لار دی',
+  };
+  static const Map<String, String> driverArrivedMsg = {
+    'fa': 'راننده رسید!',
+    'ps': 'موټروان راغی!',
+  };
+  static const Map<String, String> startRide = {
+    'fa': 'شروع سفر',
+    'ps': 'سفر پیل کول',
+  };
+  static const Map<String, String> endRide = {
+    'fa': 'پایان سفر',
+    'ps': 'سفر پای کول',
+  };
+  static const Map<String, String> rideInProgress = {
+    'fa': 'سفر در جریان است',
+    'ps': 'سفر روان دی',
+  };
+  static const Map<String, String> rideComplete = {
+    'fa': 'سفر تمام شد',
+    'ps': 'سفر پای ته ورسید',
+  };
+  static const Map<String, String> rideSummary = {
+    'fa': 'خلاصه سفر',
+    'ps': 'د سفر لنډیز',
+  };
+  static const Map<String, String> rateDriver = {
+    'fa': 'راننده را امتیاز دهید',
+    'ps': 'موټروان ته نمره ورکړئ',
+  };
+  static const Map<String, String> ratingThanks = {
+    'fa': 'از امتیاز شما سپاسگزاریم',
+    'ps': 'ستاسو نمرې مننه',
+  };
+  static const Map<String, String> finalPrice = {
+    'fa': 'قیمت نهایی',
+    'ps': 'وروستی قیمت',
+  };
+  static const Map<String, String> tripDuration = {
+    'fa': 'مدت سفر',
+    'ps': 'د سفر موده',
+  };
+  static const Map<String, String> backToHome = {
+    'fa': 'بازگشت به خانه',
+    'ps': 'کور ته ستنیدل',
+  };
+  static const Map<String, String> driverEta = {
+    'fa': 'زمان رسیدن راننده',
+    'ps': 'د موټروان رارسیدو وخت',
+  };
+  static const Map<String, String> nearbyDrivers = {
+    'fa': 'راننده‌های نزدیک',
+    'ps': 'سیمه‌ایز موټروانان',
+  };
+  static const Map<String, String> cancelSearch = {
+    'fa': 'لغو جستجو',
+    'ps': 'لټون لغوه کول',
+  };
+  static const Map<String, String> trackRideNow = {
+    'fa': 'پیگیری سفر',
+    'ps': 'سفر تعقیبول',
+  };
+  static const Map<String, String> elapsedTime = {
+    'fa': 'مدت گذشته',
+    'ps': 'تیر شوی وخت',
+  };
+  static const Map<String, String> currentLocation = {
+    'fa': 'موقعیت فعلی',
+    'ps': 'اوسنی موقعیت',
+  };
+  static const Map<String, String> myLocation = {
+    'fa': 'موقعیت من',
+    'ps': 'زما ځای',
+  };
+
   // ─── Helper ────────────────────────────────────────────────────────────────
   static String get(Map<String, String> map, String lang) {
     return map[lang] ?? map['fa'] ?? '';
